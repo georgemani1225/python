@@ -1,6 +1,2 @@
-X = int(input())
-Y = int(input())
-Z = int(input())
-N = int(input())
-lis = [[x, y, z] for x in range(X+1) for y in range(Y+1) for z in range(Z+1) if x + y + z != N]
-print lis
+a, b, c, n = [int(input()) for _ in range(4)]
+print([[x,y,z] for x in range(a + 1) for y in range(b + 1) for z in range(c + 1) if x + y + z != n])
